@@ -42,14 +42,25 @@ section{
     align-items: center;
     width: 100%;
 }
+.left{
+    display: flex;
+}
 i{
     color: white;
 }
-section>i{
+.right{
+    position: relative;
+}
+.right>i{
     border-radius: 50%;
     background-color: hsl(214, 17%, 51%);
-    
     padding: 5px;
+}
+.right .social{
+    position: absolute;
+    top: -55px;
+    left: -50px;
+    visibility: hidden;
 }
 img{
     height: 60px;
