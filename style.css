@@ -37,6 +37,7 @@ h2, h4{
 }
 /* Section part */
 section{
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,42 +46,72 @@ section{
 .left{
     display: flex;
 }
-i{
-    color: white;
-}
+/* Right part style */
 .right{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
 }
-.right>i{
-    border-radius: 50%;
-    background-color: hsl(214, 17%, 51%);
-    padding: 5px;
-}
-.right .social{
-    position: absolute;
-    top: -55px;
-    left: -50px;
-    visibility: hidden;
-}
-img{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
+.avatar{
+    width: 80px;
+    height: 80px;
 }
 .author{
     flex-grow: 0.9;
 }
-/* Social part */
-.social{
-    width: 110px;
-    border-radius: 10px;
-    padding: 0 20px;
+ul{
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-align-items: center;
-    background-color: hsl(217, 19%, 35%);
 }
-.social p{
+.share-icon{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 15px;
+    cursor: pointer;
+}
+.share-icon:hover{
+    background-color: hsl(212, 23%, 69%);
+}
+.share-icon:active{
+    transform: translateY(2px);
+}
+
+
+/* hide part */
+.hide{
+    position: absolute;
+    background-color: hsl(217, 19%,35%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    height: 10px;
+    opacity: 0.9;
+    border-radius: 13px;
+    margin-top: -140px;
+    margin-left: -40px;
+}
+.hide:after{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
+    border-bottom: 0;
+    margin-bottom: -10px;
+    margin-left: -15px;
+}
+.hide p{
     text-transform: uppercase;
-    color: hsl(214, 17%, 51%);
+    color: hsl(210, 46%, 95%);
+    margin-right: 0px;
+    opacity: .9;
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+.hide ul li{
+    padding: 0 10px;
 }
